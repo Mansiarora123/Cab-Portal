@@ -1,0 +1,114 @@
+Cab Booking Portal 
+Overview
+This is a frontend-only prototype of a Cab Booking Portal built with HTML, CSS, and JavaScript. It simulates a corporate cab booking system tailored for company and vendor workflows, enabling booking management through multiple stages such as upcoming, ongoing, completed, cancelled, and open market.
+
+The project visualizes the booking lifecycle, driver and vehicle assignment, and vendor acceptance—all with a clean, modern, and responsive user interface over a taxi-themed background image.
+
+Features
+Place New Booking: Fill in guest and trip details (pickup/drop-off location, date/time, vehicle type, vendor, etc.) and submit bookings.
+
+Booking Status Tabs: Switch between Upcoming, Ongoing, Completed, Cancelled, and Open Market bookings.
+
+Live Booking Management:
+
+Vendor Accept with modal popup for driver & vehicle assignment.
+
+Cancel booking.
+
+Place booking in Open Market.
+
+Accept Open Market booking and assign driver/vehicle.
+
+Complete ongoing trips.
+
+Search Booking: Real-time search/filter bookings by guest, vendor, vehicle, driver, and more.
+
+Responsive Design: Works well on desktop and smaller screens with stacked table layouts.
+
+Modern UI Styling: Clean, readable form inputs, buttons, and status badges. Soft shadows and rounded containers over a cab-themed background.
+
+In-Memory Data Storage: All booking data is stored temporarily in browser memory. Data resets on page reload.
+
+Technologies Used
+Plain HTML5 for structure.
+
+CSS3 for styling and responsive layout.
+
+JavaScript (ES6) for interactivity and state management.
+
+No backend server or database — this is strictly a frontend simulation.
+
+Getting Started
+1. Download the project files:
+index.html — Main HTML page with booking form and booking dashboard.
+
+style.css — Complete and polished CSS styles.
+
+script.js — JavaScript handling all booking logic and UI updates.
+
+taxi-app-concept-illustration.png (or alternate taxi-themed image for background).
+
+2. Setup
+Place all files in the same folder for easy access.
+
+3. Run
+Open index.html in your preferred web browser (Chrome, Firefox, Edge, Safari).
+
+The app will load with all UI and functionality ready to use.
+
+Usage
+Place New Booking
+Fill the form with trip details and click Book. The booking appears instantly in the Upcoming tab.
+
+Manage Bookings by Status
+Click tabs at the top to switch views between Upcoming, Ongoing, Completed, Cancelled, and Open Market bookings.
+
+Booking Actions
+
+Vendor Accept opens a popup to input driver name and vehicle number — moving booking to Ongoing.
+
+Cancel instantly cancels a booking.
+
+Open Market opens booking to be accepted by any vendor.
+
+Accept (Open Market) claims a booking and assigns driver/vehicle.
+
+Complete marks a trip as finished, updating payment status.
+
+Search Bookings
+Use the search box to quickly filter bookings by guest, vendor, vehicle, or driver.
+
+Responsive Interface
+Resize browser or try on mobile to see the layout adapt gracefully.
+
+Notes
+This project is a frontend demonstration and uses in-memory JavaScript data structures to simulate real application workflows.
+
+Booking information will be lost on page reload since no backend or persistent storage is implemented.
+
+For a full production-ready system, you would need backend integration, database persistence, authentication, and real-time communication (e.g., with RabbitMQ).
+
+Future Improvements
+Backend integration with Node.js/Express and a database like PostgreSQL.
+
+User authentication and role-based access control.
+
+Real-time vendor-company messaging with RabbitMQ or WebSockets.
+
+Live GPS/map integration.
+
+Invoice generation and download feature.
+
+Advanced filtering and sorting.
+
+Data persistence in local storage or backend.
+
+Credits
+Background image (replace or credit the source as appropriate).
+
+Fonts and colors inspired by modern SaaS dashboard designs.
+
+Developed as a capstone prototype by [Your Name].
+
+License
+This project is for educational and demonstration purposes.
