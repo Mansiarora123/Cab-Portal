@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cab Booking Portal</title>
+  <link rel="stylesheet" href="cab.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+  <h1 style="color:  #000080;;">KRISHNA CABS</h1>
+  <div class="form-section">
+    <h2>Place New Booking</h2>
+    <form id="bookingForm">
+      <label>Pickup Location</label>
+      <input name="pickup" required />
+      <label>Drop-off Location</label>
+      <input name="dropoff" required />
+      <label>Guest Name</label>
+      <input name="guest" required />
+      <label>No. of Passengers</label>
+      <input name="passengers" min="1" max="10" value="1" required type="number" />
+      <label>Email ID</label>
+      <input name="email" type="email" required />
+      <label>Mobile Number</label>
+      <input name="mobile" required maxlength="15" minlength="8" />
+      <label>Address</label>
+      <input name="address" required />
+      <label>Trip Type</label>
+      <select name="tripType">
+        <option value="Local">Local</option>
+        <option value="Outstation">Outstation</option>
+      </select>
+      <label>Date and Time</label>
+      <input name="datetime" type="datetime-local" required />
+      <label>Vehicle Type</label>
+      <select name="vehicle">
+        <option>Sedan</option>
+        <option>Hatchback</option>
+        <option>SUV</option>
+        <option>Luxury</option>
+      </select>
+      <label>Vendor</label>
+      <select name="vendor">
+        <option>Vendor 1</option>
+        <option>Vendor 2</option>
+        <option>Vendor 3</option>
+      </select>
+      <button type="submit">Book</button>
+    </form>
+  </div>
+
+  <div class="bookings-section">
+    <h2>Bookings</h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('upcoming')">Upcoming</button>
+      <button class="tab-btn" onclick="switchTab('ongoing')">Ongoing</button>
+      <button class="tab-btn" onclick="switchTab('completed')">Completed</button>
+      <button class="tab-btn" onclick="switchTab('cancelled')">Cancelled</button>
+      <button class="tab-btn" onclick="switchTab('openmarket')">Open Market</button>
+    </div>
+    <input id="searchBox" placeholder="Search by guest, vehicle, vendor, etc." oninput="searchBookings()" />
+    <table id="bookingsTable">
+      <thead>
+        <tr>
+          <th>DateTime</th>
+          <th>Guest</th>
+          <th>Pickup</th>
+          <th>Drop-off</th>
+          <th>Vehicle</th>
+          <th>Trip Type</th>
+          <th>Vendor</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Simple popup for assigning driver and vehicle (simulates vendor confirmation) -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h3>Assign Driver & Vehicle</h3>
+      <form id="assignForm">
+        <label>Driver Name</label>
+        <input name="driver" required />
+        <label>Vehicle Number</label>
+        <input name="vehicleNo" required />
+        <button type="submit">Assign</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

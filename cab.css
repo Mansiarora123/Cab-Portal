@@ -1,0 +1,479 @@
+/* ===== Global Body and Background ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2em;
+  background: #f4f4fa;
+  background-image: url('taxi-app-concept-illustration.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #2c3e50;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body, button, input, select {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== HEADER / TITLE ===== */
+h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #274273;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(39, 66, 115, 0.5);
+  letter-spacing: 2px;
+  user-select: none;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== FORM SECTION ===== */
+.form-section {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 32px 36px 30px 36px;
+  border-radius: 16px;
+  margin-bottom: 36px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-section:hover {
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.22);
+}
+
+/* ===== LABELS ===== */
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #223567;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  user-select: none;
+}
+
+/* ===== INPUTS and SELECTS ===== */
+input,
+select {
+  padding: 14px 16px;
+  width: 100%;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 2px solid #ccd6f6;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fafbff;
+  color: #122651;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #a1a9d1;
+  font-style: italic;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4061f5;
+  box-shadow: 0 0 10px rgba(64, 97, 245, 0.7);
+  background-color: #fff;
+  color: #0c174f;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 14px 28px;
+  border: none;
+  background: #4061f5;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: background 0.3s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 18px rgba(64, 97, 245, 0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background: #2f4ace;
+  box-shadow: 0 6px 25px rgba(47, 74, 206, 0.8);
+  outline: none;
+}
+
+button.cancel {
+  background: #db524b;
+  box-shadow: 0 4px 18px rgba(219, 82, 75, 0.4);
+}
+
+button.cancel:hover,
+button.cancel:focus {
+  background: #a93730;
+  box-shadow: 0 6px 25px rgba(169, 55, 48, 0.8);
+}
+
+button:disabled {
+  background: #c4cbe1;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Extra margin below last input/select for spacing */
+.form-section input:last-of-type,
+.form-section select:last-of-type {
+  margin-bottom: 26px;
+}
+
+/* ===== SEARCH BOX ===== */
+#searchBox {
+  margin: 22px auto 26px auto;
+  padding: 12px 16px;
+  width: 52%;
+  border: 1.8px solid #c2c2e5;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  display: block;
+  max-width: 700px;
+  transition: border-color 0.25s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#searchBox:focus {
+  border-color: #4061f5;
+  box-shadow: 0 0 12px rgba(64, 97, 245, 0.6);
+  outline: none;
+}
+
+/* ===== BOOKINGS SECTION (with white background container) ===== */
+.bookings-section {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 32px 36px 32px 36px;
+  border-radius: 16px;
+  margin-bottom: 36px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+  color: #2c3e50;
+}
+
+.bookings-section:hover {
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== TABS ===== */
+.tabs {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tab-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 24px;
+  background: #e3e8fc;
+  color: #223973;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  user-select: none;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 2px 12px rgba(72, 90, 190, 0.1);
+}
+
+.tab-btn.active {
+  background: #4061f5;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(64, 97, 245, 0.7);
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15.6px;
+  background: #f7faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 2px #bfcdf330;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+table:hover {
+  box-shadow: 0 8px 50px 5px #bfcdf344;
+}
+
+th,
+td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f9;
+  vertical-align: middle;
+  user-select: text;
+  transition: background-color 0.15s ease;
+}
+
+th {
+  background: #e9f0ff;
+  color: #324d8f;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: #f0f6ff;
+  cursor: default;
+}
+
+/* ===== STATUS BADGES ===== */
+.status {
+  padding: 5px 16px;
+  border-radius: 22px;
+  font-size: 1em;
+  font-weight: 700;
+  white-space: nowrap;
+  user-select: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.upcoming {
+  background: #d1e7fd;
+  color: #085294;
+}
+
+.ongoing {
+  background: #ffe066;
+  color: #9e7500;
+}
+
+.completed {
+  background: #b9eab2;
+  color: #27620c;
+}
+
+.cancelled {
+  background: #fbb4b4;
+  color: #b01212;
+}
+
+.openmarket {
+  background: #fff1da;
+  color: #a04509;
+}
+
+/* ===== ACTION BUTTONS IN TABLE ===== */
+table button {
+  padding: 9px 20px;
+  font-size: 0.95rem;
+  border-radius: 16px;
+  margin: 0 4px 0 0;
+  box-shadow: 0 2px 12px rgba(64, 97, 245, 0.22);
+  user-select: none;
+  transition: background 0.3s ease, box-shadow 0.25s ease;
+}
+
+table button.cancel {
+  background: #db524b;
+  box-shadow: 0 2px 12px rgba(219, 82, 75, 0.22);
+}
+
+table button:hover,
+table button:focus {
+  filter: brightness(90%);
+  outline: none;
+  box-shadow: 0 4px 16px rgba(64, 97, 245, 0.5);
+}
+
+/* Cancel button hover effect */
+table button.cancel:hover,
+table button.cancel:focus {
+  filter: brightness(80%);
+  box-shadow: 0 4px 16px rgba(219, 82, 75, 0.5);
+}
+
+/* ===== POPUP (MODAL) ===== */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(40, 56, 104, 0.4);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.22);
+  padding: 36px 32px 28px 32px;
+  min-width: 320px;
+  max-width: 420px;
+  position: relative;
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  font-size: 28px;
+  position: absolute;
+  right: 22px;
+  top: 14px;
+  cursor: pointer;
+  color: #b01212;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #700807;
+  outline: none;
+}
+
+/* ===== POPUP FORM ===== */
+#assignForm label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #223567;
+  user-select: none;
+}
+
+#assignForm input {
+  padding: 12px 14px;
+  width: 100%;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  border: 1.8px solid #ccd6f6;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fafbff;
+  color: #122651;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#assignForm input::placeholder {
+  color: #a1a9d1;
+  font-style: italic;
+}
+
+#assignForm input:focus {
+  outline: none;
+  border-color: #4061f5;
+  box-shadow: 0 0 10px rgba(64, 97, 245, 0.7);
+  background-color: #fff;
+  color: #0c174f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  #searchBox {
+    width: 90%;
+  }
+  .bookings-section {
+    max-width: 95vw;
+  }
+  .form-section {
+    max-width: 95vw;
+  }
+  table {
+    font-size: 14px;
+  }
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    border-bottom: none;
+    padding-left: 50%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #4061f5;
+    top: 12px;
+    font-size: 14px;
+  }
+
+  .tabs {
+    text-align: left;
+  }
+
+  .tab-btn {
+    padding: 8px 18px;
+    font-size: 1rem;
+  }
+}
